@@ -1,5 +1,6 @@
 <?php
     echo("<h1>Radek Oszust</h1>");
+    require_once("connect.php");
 
     $conn=new mysqli("mysql-oszust-radek.alwaysdata.net","217211","Radek003003%","oszust-radek_db");
     $result=$conn->query('SELECT * FROM pracownicy');
