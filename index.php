@@ -25,6 +25,7 @@
                 while($row=$result->fetch_assoc()){
                     echo("<tr>");
                         echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row[""]."</td><td>".$row["zarobki"]."</td>");
+                    echo("</tr>");
                 }
                 echo("</table>");
 
@@ -38,11 +39,12 @@
                 while($row=$result->fetch_assoc()){
                     echo("<tr>");
                         echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row[""]."</td><td>".$row["zarobki"]."</td>");
+                    echo("</tr>");
                 }
                 echo("</table>");
 
                 $conn=new mysqli("");
-            $result=$conn->query('SELECT * FROM pracownicy where dzial=2 or dzial=3);
+            $result=$conn->query('SELECT * FROM pracownicy where dzial=2 or dzial=3');
             echo("<table_border=1>");
             echo("<th>id</th>");
             echo("<th>imie</th>");
@@ -51,6 +53,7 @@
                 while($row=$result->fetch_assoc()){
                     echo("<tr>");
                         echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row[""]."</td><td>".$row["zarobki"]."</td>");
+                        echo("</tr>");
                 }
                 echo("</table>");
 
