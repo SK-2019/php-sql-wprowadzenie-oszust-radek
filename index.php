@@ -16,7 +16,7 @@
             echo("</table>");
 
 
-                $conn=new mysqli("");
+                $conn=new mysqli("mysql-oszust-radek.alwaysdata.net","217211","Radek003003%","oszust-radek_db");
             $result=$conn->query('SELECT * FROM pracownicy where dzial=2 or dzial=3');
             echo("<table_border=1>");
             echo("<th>id</th>");
