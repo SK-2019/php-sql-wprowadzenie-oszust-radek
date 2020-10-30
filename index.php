@@ -16,7 +16,7 @@
             echo("</table>");
 
     $conn=new mysqli("mysql-oszust-radek.alwaysdata.net","217211","Radek003003%","oszust-radek_db");
-    $result=$conn->query('SELECT * FROM pracownicy where (dzial=1 or dzial=2)');
+    $result=$conn->query('SELECT * FROM pracownicy where dzial=1');
     echo("<table border=1>");
     echo("<th>id</th>");
     echo("<th>imie</th>");
@@ -30,7 +30,7 @@
             echo("</table>");
 
     $conn=new mysqli("mysql-oszust-radek.alwaysdata.net","217211","Radek003003%","oszust-radek_db");
-    $result=$conn->query('SELECT * FROM pracownicy where (dzial=2 or dzial=4)');
+    $result=$conn->query('SELECT * FROM pracownicy where imie not like "%a"');
     echo("<table border=1>");
     echo("<th>id</th>");
     echo("<th>imie</th>");
