@@ -16,7 +16,7 @@
             echo("</table>");
 
     $conn=new mysqli("mysql-oszust-radek.alwaysdata.net","217211","Radek003003%","oszust-radek_db");
-    $result=$conn->query('SELECT * FROM pracownicy');
+    $result=$conn->query('SELECT * FROM pracownicy where dzial=1');
     echo("<table border=1>");
     echo("<th>id</th>");
     echo("<th>imie</th>");
