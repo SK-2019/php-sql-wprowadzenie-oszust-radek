@@ -16,7 +16,7 @@
             $conn=new mysqli("mysql-oszust-radek.alwaysdata.net","217211","Radek003003%","oszust-radek_db");
             $result=$conn->query('SELECT count(imie) as kjl, dzial, nazwa_dzial FROM pracownicy, organizacja where dzial=id_org group by dzial');
             echo("<table border=1>");
-            echo("<th>id</th>");
+            echo("<th>count(imie)</th>");
             echo("<th>dzial</th>");
             echo("<th>nazwa_dzial</th>");
            
