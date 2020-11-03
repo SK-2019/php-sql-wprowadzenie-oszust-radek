@@ -1,91 +1,93 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="mystyle.css">
 </head>
 <body>
 
-<h1>This is a heading</h1>
-<p>This is a paragraph.</p>
+
+    <?php
+        echo("<h1>Radek Oszust</h1>");
+        require_once("connect.php");
+
+        echo("<h2>Zad1</h2>");
+        $conn=new mysqli("mysql-oszust-radek.alwaysdata.net","217211","Radek003003%","oszust-radek_db");
+        $result=$conn->query('SELECT * FROM pracownicy');
+        echo("<table border=1>");
+        echo("<th>id</th>");
+        echo("<th>imie</th>");
+        echo("<th>dzial</th>");
+        echo("<th>zarobki</th>");
+            while($row=$result->fetch_assoc()){
+                echo("<tr>");
+                    echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td>");
+                    echo("</tr>");
+            }
+                echo("</table>");
+
+        echo("<h2>Zad2</h2>");
+        $conn=new mysqli("mysql-oszust-radek.alwaysdata.net","217211","Radek003003%","oszust-radek_db");
+        $result=$conn->query('SELECT * FROM pracownicy where dzial=1');
+        echo("<table border=1>");
+        echo("<th>id</th>");
+        echo("<th>imie</th>");
+        echo("<th>dzial</th>");
+        echo("<th>zarobki</th>");
+            while($row=$result->fetch_assoc()){
+                echo("<tr>");
+                    echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td>");
+                    echo("</tr>");
+            }
+                echo("</table>");
+
+        echo("<h2>Zad3</h2>");
+        $conn=new mysqli("mysql-oszust-radek.alwaysdata.net","217211","Radek003003%","oszust-radek_db");
+        $result=$conn->query('SELECT * FROM pracownicy where imie not like "%a"');
+        echo("<table border=1>");
+        echo("<th>id</th>");
+        echo("<th>imie</th>");
+        echo("<th>dzial</th>");
+        echo("<th>zarobki</th>");
+            while($row=$result->fetch_assoc()){
+                echo("<tr>");
+                    echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td>");
+                    echo("</tr>");
+            }
+                echo("</table>");
+
+        echo("<h2>Zad4</h2>");
+        $conn=new mysqli("mysql-oszust-radek.alwaysdata.net","217211","Radek003003%","oszust-radek_db");
+        $result=$conn->query('SELECT * FROM pracownicy where zarobki>30');
+        echo("<table border=1>");
+        echo("<th>id</th>");
+        echo("<th>imie</th>");
+        echo("<th>dzial</th>");
+        echo("<th>zarobki</th>");
+            while($row=$result->fetch_assoc()){
+                echo("<tr>");
+                    echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td>");
+                    echo("</tr>");
+            }
+                echo("</table>");
+
+        echo("<h2>Zad5</h2>");
+        $conn=new mysqli("mysql-oszust-radek.alwaysdata.net","217211","Radek003003%","oszust-radek_db");
+        $result=$conn->query('SELECT * FROM pracownicy where zarobki<45');
+        echo("<table border=1>");
+        echo("<th>id</th>");
+        echo("<th>imie</th>");
+        echo("<th>dzial</th>");
+        echo("<th>zarobki</th>");
+            while($row=$result->fetch_assoc()){
+                echo("<tr>");
+                    echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td>");
+                    echo("</tr>");
+            }
+                echo("</table>");
 
 
-<?php
-    echo("<h1>Radek Oszust</h1>");
-    require_once("connect.php");
-
-    $conn=new mysqli("mysql-oszust-radek.alwaysdata.net","217211","Radek003003%","oszust-radek_db");
-    $result=$conn->query('SELECT * FROM pracownicy');
-    echo("<table border=1>");
-    echo("<th>id</th>");
-    echo("<th>imie</th>");
-    echo("<th>dzial</th>");
-    echo("<th>zarobki</th>");
-        while($row=$result->fetch_assoc()){
-            echo("<tr>");
-                echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td>");
-                echo("</tr>");
-        }
-            echo("</table>");
-
-    $conn=new mysqli("mysql-oszust-radek.alwaysdata.net","217211","Radek003003%","oszust-radek_db");
-    $result=$conn->query('SELECT * FROM pracownicy where dzial=1');
-    echo("<table border=1>");
-    echo("<th>id</th>");
-    echo("<th>imie</th>");
-    echo("<th>dzial</th>");
-    echo("<th>zarobki</th>");
-        while($row=$result->fetch_assoc()){
-            echo("<tr>");
-                echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td>");
-                echo("</tr>");
-        }
-            echo("</table>");
-
-    $conn=new mysqli("mysql-oszust-radek.alwaysdata.net","217211","Radek003003%","oszust-radek_db");
-    $result=$conn->query('SELECT * FROM pracownicy where imie not like "%a"');
-    echo("<table border=1>");
-    echo("<th>id</th>");
-    echo("<th>imie</th>");
-    echo("<th>dzial</th>");
-    echo("<th>zarobki</th>");
-        while($row=$result->fetch_assoc()){
-            echo("<tr>");
-                echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td>");
-                echo("</tr>");
-        }
-            echo("</table>");
-
-    $conn=new mysqli("mysql-oszust-radek.alwaysdata.net","217211","Radek003003%","oszust-radek_db");
-    $result=$conn->query('SELECT * FROM pracownicy where zarobki>30');
-    echo("<table border=1>");
-    echo("<th>id</th>");
-    echo("<th>imie</th>");
-    echo("<th>dzial</th>");
-    echo("<th>zarobki</th>");
-        while($row=$result->fetch_assoc()){
-            echo("<tr>");
-                echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td>");
-                echo("</tr>");
-        }
-            echo("</table>");
-
-    $conn=new mysqli("mysql-oszust-radek.alwaysdata.net","217211","Radek003003%","oszust-radek_db");
-    $result=$conn->query('SELECT * FROM pracownicy where zarobki<45');
-    echo("<table border=1>");
-    echo("<th>id</th>");
-    echo("<th>imie</th>");
-    echo("<th>dzial</th>");
-    echo("<th>zarobki</th>");
-        while($row=$result->fetch_assoc()){
-            echo("<tr>");
-                echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td>");
-                echo("</tr>");
-        }
-            echo("</table>");
 
 
-
-
-?>
+    ?>
 </body>
 </html>
