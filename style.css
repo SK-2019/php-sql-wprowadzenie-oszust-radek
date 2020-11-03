@@ -2,20 +2,6 @@ body {
   background-color: lightblue;
 }
 
-table {
-  border-collapse: collapse;
-}
-
-h1 {
-  color: orange;
-  margin-left: 20px;
-}
-
-th, td {
-  padding: 15px;
-  text-align: left;
-}
-
 table, th, td {
   border: 1px solid black;
 }
