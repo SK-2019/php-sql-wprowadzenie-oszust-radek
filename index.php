@@ -19,7 +19,7 @@
             echo("<th>id</th>");
             echo("<th>imie</th>");
             echo("<th>dzial</th>");
-            echo("<th>zarobki</th>");
+           
                 while($row=$result->fetch_assoc()){
                     echo("<tr>");
                         echo("<td>".$row["kjl"]."</td><td>".$row["dzial"]."</td><td>".$row["nazwa_dzial"]."</td>");
