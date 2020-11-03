@@ -12,6 +12,7 @@
             require_once("connect.php");
 
             echo("<h2>Zad1</h2>");
+            echo("<h3>SELECT * FROM pracownicy</h3>");
             $conn=new mysqli("mysql-oszust-radek.alwaysdata.net","217211","Radek003003%","oszust-radek_db");
             $result=$conn->query('SELECT * FROM pracownicy');
             echo("<table border=1>");
@@ -27,6 +28,7 @@
                     echo("</table>");
 
             echo("<h2>Zad2</h2>");
+            echo("<h3>SELECT * FROM pracownicy where dzial=1</h3>");
             $conn=new mysqli("mysql-oszust-radek.alwaysdata.net","217211","Radek003003%","oszust-radek_db");
             $result=$conn->query('SELECT * FROM pracownicy where dzial=1');
             echo("<table border=1>");
@@ -42,6 +44,7 @@
                     echo("</table>");
 
             echo("<h2>Zad3</h2>");
+            
             $conn=new mysqli("mysql-oszust-radek.alwaysdata.net","217211","Radek003003%","oszust-radek_db");
             $result=$conn->query('SELECT * FROM pracownicy where imie not like "%a"');
             echo("<table border=1>");
