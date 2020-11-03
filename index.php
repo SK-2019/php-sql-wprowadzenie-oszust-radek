@@ -17,8 +17,8 @@
             $result=$conn->query('SELECT count(imie) as kjl, dzial, nazwa_dzial FROM pracownicy, organizacja where dzial=id_org group by dzial');
             echo("<table border=1>");
             echo("<th>id</th>");
-            echo("<th>imie</th>");
             echo("<th>dzial</th>");
+            echo("<th>nazwa_dzial</th>");
            
                 while($row=$result->fetch_assoc()){
                     echo("<tr>");
