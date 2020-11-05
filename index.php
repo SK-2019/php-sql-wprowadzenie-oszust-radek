@@ -6,7 +6,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+    <div class="nav">
+        linki
+        <a href="orgPracownicy.php">Org i Prac</a>
+        <a href="agregat.php">F. agregujace</a>
+</div>
         <?php
             echo("<h1>Radek Oszust</h1>");
             require_once("connect.php");
