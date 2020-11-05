@@ -10,5 +10,6 @@
   <?php
   echo("<h1>agregat.php</h1>");
   ?>
-  </head>
-  </body>
+    
+</body>
+</html>
