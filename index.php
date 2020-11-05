@@ -8,7 +8,7 @@
 <body>
     <div class="nav">
         linki
-        <a href="orgPracownicy.php">Org i Prac</a>
+        <a href="https://github.com/SK-2019/php-sql-wprowadzenie-oszust-radek">Org i Prac</a>
         <a href="agregat.php">F. agregujace</a>
 </div>
         <?php
