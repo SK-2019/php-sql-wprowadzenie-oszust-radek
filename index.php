@@ -16,7 +16,7 @@
             require_once("connect.php");
 
             echo("<h2>Zad1</h2>");
-            echo("<h3>SELECT count(imie) as kjl, dzial, nazwa_dzial FROM pracownicy, organizacja</h3>");
+            echo("<h3>SELECT count(imie) as kjl, dzial, nazwa_dzial FROM pracownicy, organizacja where dzial=id_org group by dzial</h3>");
             $conn=new mysqli("mysql-oszust-radek.alwaysdata.net","217211","Radek003003%","oszust-radek_db");
             $result=$conn->query('SELECT count(imie) as kjl, dzial, nazwa_dzial FROM pracownicy, organizacja where dzial=id_org group by dzial');
             echo("<table border=1>");
@@ -48,7 +48,7 @@
                     echo("</table>");
 
             echo("<h2>Zad3</h2>");
-            
+            echo("<h3>SELECT * FROM pracownicy where imie not like '%a'</h3>");
             $conn=new mysqli("mysql-oszust-radek.alwaysdata.net","217211","Radek003003%","oszust-radek_db");
             $result=$conn->query('SELECT * FROM pracownicy where imie not like "%a"');
             echo("<table border=1>");
@@ -64,6 +64,7 @@
                     echo("</table>");
 
             echo("<h2>Zad4</h2>");
+            echo("<h3>SELECT * FROM pracownicy where zarobki>30</h3>");
             $conn=new mysqli("mysql-oszust-radek.alwaysdata.net","217211","Radek003003%","oszust-radek_db");
             $result=$conn->query('SELECT * FROM pracownicy where zarobki>30');
             echo("<table border=1>");
@@ -79,6 +80,7 @@
                     echo("</table>");
 
             echo("<h2>Zad5</h2>");
+            echo("<h3>SELECT * FROM pracownicy where zarobki<45</h3>");
             $conn=new mysqli("mysql-oszust-radek.alwaysdata.net","217211","Radek003003%","oszust-radek_db");
             $result=$conn->query('SELECT * FROM pracownicy where zarobki<45');
             echo("<table border=1>");
