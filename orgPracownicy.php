@@ -12,7 +12,7 @@
     <a href="https://php-oszust-radek.herokuapp.com/"><b>Str Glowna</b></a>
     <a href="https://github.com/SK-2019/php-sql-wprowadzenie-oszust-radek"><b>Github | </b></a>
     <a href="agregat.php"><b>F. agregujace | </b></a>
-    <a href="OrgPracownicy.php"><b>Org i Prac | </b></a>
+    <a href="orgPracownicy.php"><b>Org i Prac | </b></a>
     <a href="pracownicy.php"><b>Pracownicy</b></a>
 </h3>
 <h1>Radek Oszust</h1>
