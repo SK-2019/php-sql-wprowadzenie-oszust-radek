@@ -4,13 +4,13 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Karolina Zatylny 2Ti</title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="style.css">
     </head>
 <body>
     <h2>linki</h2>
 <h3>
     <a href="https://php-oszust-radek.herokuapp.com/"><b>Str Glowna</b></a>
-    <a href="https://github.com/SK-2019/php-sql-wprowadzenie-oszust-radek"><b>GITHUB | </b></a>
+    <a href="https://github.com/SK-2019/php-sql-wprowadzenie-oszust-radek"><b>Github | </b></a>
     <a href="agregat.php"><b>F. agregujace | </b></a>
     <a href="orgpracownicy.php"><b>Org i Prac | </b></a>
     <a href="pracownicy.php"><b>Pracownicy</b></a>
