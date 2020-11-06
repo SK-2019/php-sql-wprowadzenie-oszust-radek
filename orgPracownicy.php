@@ -15,6 +15,7 @@
   <?php
   
   echo("<h2>Pracownicy z nazwa dzialu</h2>");
+  require_once("connect.php");
 $sql = "SELECT * FROM pracownicy, organizacja where (dzial = id_org)";
 $conn = new mysqli("mysql-oszust-radek.alwaysdata.net","217211","Radek003003%","oszust-radek_db");
  $result=$conn->query($sql);
