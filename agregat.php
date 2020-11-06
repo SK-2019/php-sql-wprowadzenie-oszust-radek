@@ -16,6 +16,7 @@
 <body>
 
   <?php
+    require_once("connect.php");
     echo("<h1>agregat.php</h1>");
     echo("<h2>Suma zarobkow wszystkich pracownikow</h2>");
  $sql = "SELECT sum(zarobki) as sum FROM pracownicy, organizacja WHERE (dzial = id_org)";
