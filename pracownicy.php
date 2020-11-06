@@ -16,7 +16,7 @@
 
 echo("<h2>Pracownicy z działu 2</h2>");
 $sql = "SELECT * FROM pracownicy, organizacja where (dzial = id_org) and (dzial = 2)";
-$conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
+$conn = new mysqli("mysql-oszust-radek.alwaysdata.net","217211","Radek003003%","oszust-radek_db");
  $result=$conn->query($sql);
   require("conn.php");
         echo("<table border=1>");
@@ -34,7 +34,7 @@ $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
   
 echo("<h2>Pracownicy z działu 2 i z działu 3</h2>");
 $sql = "SELECT * FROM pracownicy, organizacja where (dzial = id_org) and (dzial = 2 or dzial = 3)";
-$conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
+$conn = new mysqli("mysql-oszust-radek.alwaysdata.net","217211","Radek003003%","oszust-radek_db");
  $result=$conn->query($sql);
   require("conn.php");
         echo("<table border=1>");
@@ -52,7 +52,7 @@ $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
   
 echo("<h2>Pracownicy tylko z zarobkami mniejszymi niz 30</h2>");
 $sql = "SELECT * FROM pracownicy, organizacja where (dzial = id_org) and (zarobki<30)";
-$conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
+$conn = new mysqli("mysql-oszust-radek.alwaysdata.net","217211","Radek003003%","oszust-radek_db");
  $result=$conn->query($sql);
   require("conn.php");
         echo("<table border=1>");
