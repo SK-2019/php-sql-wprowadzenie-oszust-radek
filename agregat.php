@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <div class="nav"> 
     <h2>linki</h2>
+        <h4><a href="https://php-oszust-radek.herokuapp.com/"><b>Str Glowna</b></a></h4>
         <h4><a href="https://github.com/SK-2019/php-sql-wprowadzenie-oszust-radek">Github</a></h4>
         <h4><a href="orgPracownicy.php">Org i Prac</a></h4>
         <h4><a href="agregat.php">F. agregujace</a></h4>
