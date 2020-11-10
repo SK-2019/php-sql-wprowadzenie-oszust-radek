@@ -22,7 +22,7 @@
 echo("<h2>Zad1</h2>");
  $sql = "SELECT * ,YEAR(curdate())-YEAR(data_urodzenia) AS wiek FROM pracownicy, organizacja WHERE (dzial = id_org)";
 echo("<h3>".$sql."</h3>");
-$conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
+$conn = new mysqli("mysql-oszust-radek.alwaysdata.net","217211","Radek003003%","oszust-radek_db");
  $result=$conn->query($sql);
         echo("<table border=1>");
         echo("<th>nazwa_dzial</th>");
