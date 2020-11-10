@@ -12,6 +12,7 @@
     <a href="agregat.php"><b>F. agregujace | </b></a>
     <a href="orgPracownicy.php"><b>Org i Prac | </b></a>
     <a href="pracownicy.php"><b>Pracownicy</b></a>
+    <a href="dataiczas.php">Data i czas</b></a>
         </h3>
 </div>    
 </head>
