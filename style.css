@@ -27,3 +27,13 @@ h1 {
 h2 {
   text-shadow: 2px 2px;
 }
+
+a {
+text-decoration: none;
+  background-color: red;
+  padding: 3px;
+}
+
+a:hover {
+  background-color: orange;
+}
