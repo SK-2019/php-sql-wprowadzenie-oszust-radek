@@ -37,7 +37,7 @@ $conn = new mysqli("mysql-oszust-radek.alwaysdata.net","217211","Radek003003%","
         echo("</table>");
     
     echo("<h2>Zad2</h2>");
- $sql = "SELECT * ,YEAR(curdate())-YEAR(data_urodzenia) AS wiek FROM pracownicy, organizacja WHERE (dzial = id_org) and dzial=2";
+ $sql = "SELECT * ,YEAR(curdate())-YEAR(data_urodzenia) AS wiek FROM pracownicy, organizacja WHERE (dzial = id_org) and dzial=4";
 echo("<h3>".$sql."</h3>");
 $conn = new mysqli("mysql-oszust-radek.alwaysdata.net","217211","Radek003003%","oszust-radek_db");
  $result=$conn->query($sql);
