@@ -125,7 +125,7 @@ $conn = new mysqli("mysql-oszust-radek.alwaysdata.net","217211","Radek003003%","
 
              require("connect.php");
              $sql = ("SELECT *, DATE_FORMAT(data_urodzenia,'%W-%m-%Y') as format from pracownicy");
-             echo("<h2>ZADANIE 1: $sql</h2>");
+             echo("<h2>Zad1: $sql</h2>");
              $result=$conn->query($sql);
              include("connect.php");
                      echo("<table border=1>");
@@ -146,7 +146,7 @@ $conn = new mysqli("mysql-oszust-radek.alwaysdata.net","217211","Radek003003%","
              require("connect.php");
              $sql1 = ("SET lc_time_names = 'pl_PL'");
              $sql2 = ("SELECT DATE_FORMAT(CURDATE(), '%W')as data");
-             echo("<h2>ZADANIE 2: $sql2</h2>");
+             echo("<h2>Zad2: $sql2</h2>");
              $result=$conn->query($sql1);
              $result=$conn->query($sql2);
 
@@ -164,7 +164,7 @@ $conn = new mysqli("mysql-oszust-radek.alwaysdata.net","217211","Radek003003%","
              require("connect.php");
              $sql1 = ("SET lc_time_names = 'pl_PL'");
              $sql2 = ("SELECT *, DATE_FORMAT(data_urodzenia,'%M-%W-%Y') as format from pracownicy");
-             echo("<h2>ZADANIE 3: $sql2</h2>");
+             echo("<h2>Zad3: $sql2</h2>");
              $result=$conn->query($sql);
              include("connect.php");
                      echo("<table border=1>");
@@ -184,7 +184,7 @@ $conn = new mysqli("mysql-oszust-radek.alwaysdata.net","217211","Radek003003%","
 
             require("connect.php");
             $sql2 = ("SELECT curtime(4)");
-            echo("<h2>ZADANIE 4: $sql2</h2>");
+            echo("<h2>Zad4: $sql2</h2>");
             $result=$conn->query($sql2);
             include("connect.php");
                       echo("<table border=1>");
@@ -200,7 +200,7 @@ $conn = new mysqli("mysql-oszust-radek.alwaysdata.net","217211","Radek003003%","
             require("connect.php");
             $sql1 = ("SET lc_time_names = 'pl_PL'");
             $sql2 = ("SELECT *, DATE_FORMAT(data_urodzenia,'%Y-%M-%W') as format from pracownicy");
-            echo("<h2>ZADANIE 5: $sql2</h2>");
+            echo("<h2>Zad5: $sql2</h2>");
             $result=$conn->query($sql1);
             $result=$conn->query($sql2);                
             include("connect.php");
