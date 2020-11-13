@@ -55,7 +55,7 @@ $conn = new mysqli("mysql-oszust-radek.alwaysdata.net","217211","Radek003003%","
     echo("</table>");
            require("connect.php");
            $sql='SELECT sum(YEAR(CURDATE()) - YEAR(data_urodzenia)) as wiek FROM pracownicy, organizacja WHERE dzial=id_org AND nazwa_dzial="handel"';
-           echo("<h2>ZADANIE 4: $sql</h2>");
+           echo("<h2>Zad4: $sql</h2>");
            $result = $conn->query($sql);
                echo("<table border>");
                echo("<th>Wiek_pracowników_handel</th>");
@@ -67,7 +67,7 @@ $conn = new mysqli("mysql-oszust-radek.alwaysdata.net","217211","Radek003003%","
           echo("</table>");
           require("connect.php");
           $sql='SELECT sum(YEAR(CURDATE()) - YEAR(data_urodzenia)) as wiek FROM pracownicy WHERE imie like "%a"';
-          echo("<h2>ZADANIE 5: $sql</h2>");
+          echo("<h2>Zad5: $sql</h2>");
           $result = $conn->query($sql);
               echo("<table border>");
               echo("<th>Wiek_kobiet</th>");
@@ -80,7 +80,7 @@ $conn = new mysqli("mysql-oszust-radek.alwaysdata.net","217211","Radek003003%","
 
           require("connect.php");
           $sql='SELECT sum(YEAR(CURDATE()) - YEAR(data_urodzenia)) as wiek FROM pracownicy WHERE imie not like "%a"';
-          echo("<h2>ZADANIE 6: $sql</h2>");
+          echo("<h2>Zad6: $sql</h2>");
           $result = $conn->query($sql);
               echo("<table border>");
               echo("<th>Wiek_mężczyzn</th>");
@@ -93,7 +93,7 @@ $conn = new mysqli("mysql-oszust-radek.alwaysdata.net","217211","Radek003003%","
 
         require("connect.php");
         $sql='SELECT dzial, avg(YEAR(CURDATE()) - YEAR(data_urodzenia)) as a, nazwa_dzial FROM pracownicy, organizacja WHERE dzial=id_org group by dzial';
-          echo("<h2>ZADANIE 7: $sql</h2>");
+          echo("<h2>Zad7: $sql</h2>");
           $result = $conn->query($sql);
               echo("<table border>");
               echo("<th>Wiek_mężczyzn</th>");
@@ -108,7 +108,7 @@ $conn = new mysqli("mysql-oszust-radek.alwaysdata.net","217211","Radek003003%","
 
          require("connect.php");
          $sql='SELECT dzial, sum(YEAR(CURDATE()) - YEAR(data_urodzenia)) as suma, nazwa_dzial FROM pracownicy, organizacja WHERE dzial=id_org group by dzial';
-           echo("<h2>ZADANIE 8: $sql</h2>");
+           echo("<h2>Zad8: $sql</h2>");
            $result = $conn->query($sql);
                echo("<table border>");
                echo("<th>Dział</th>");
