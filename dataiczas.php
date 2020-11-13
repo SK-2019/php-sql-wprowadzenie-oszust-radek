@@ -125,7 +125,7 @@ $conn = new mysqli("mysql-oszust-radek.alwaysdata.net","217211","Radek003003%","
                $sql1 = "SET lc_time_names = 'pl_PL'";
                $sql2 = "SELECT DATE_FORMAT(CURDATE(), '%W')as data";
               echo("<h3>".$sql2."</h3>");
-              $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
+              $conn = new mysqli("mysql-oszust-radek.alwaysdata.net","217211","Radek003003%","oszust-radek_db");
                $result=$conn->query($sql1);
                $result=$conn->query($sql2);
                require("conn.php");
@@ -143,7 +143,7 @@ $conn = new mysqli("mysql-oszust-radek.alwaysdata.net","217211","Radek003003%","
                       echo("<h2>Wyświetl nazwy miesięcy w dacie urodzenia</h2>");
                       $sql = "SELECT *, DATE_FORMAT(data_urodzenia,'%W-%M-%Y') as format FROM pracownicy";
                      echo("<h3>".$sql."</h3>");
-                     $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
+                     $conn = new mysqli("mysql-oszust-radek.alwaysdata.net","217211","Radek003003%","oszust-radek_db");
                       $result=$conn->query($sql);
                       require("conn.php");
                              echo("<table border=1>");
@@ -160,7 +160,7 @@ $conn = new mysqli("mysql-oszust-radek.alwaysdata.net","217211","Radek003003%","
                              echo("<h2>Obecna, dokładna godzina (z dokładnością do milisekund)</h2>");
                              $sql = "SELECT curtime(4)";
                             echo("<h3>".$sql."</h3>");
-                            $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
+                            $conn = new mysqli("mysql-oszust-radek.alwaysdata.net","217211","Radek003003%","oszust-radek_db");
                              $result=$conn->query($sql);
                              require("conn.php");
                                     echo("<table border=1>");
@@ -177,7 +177,7 @@ $conn = new mysqli("mysql-oszust-radek.alwaysdata.net","217211","Radek003003%","
                                         
                                     $sql = "SELECT *, DATE_FORMAT(data_urodzenia,'%Y-%M-%W') as format from pracownicy";
                             echo("<h3>".$sql."</h3>");
-                            $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
+                            $conn = new mysqli("mysql-oszust-radek.alwaysdata.net","217211","Radek003003%","oszust-radek_db");
                              $result=$conn->query($sql);
                              require("conn.php");
                                     echo("<table border=1>");
@@ -195,7 +195,7 @@ $conn = new mysqli("mysql-oszust-radek.alwaysdata.net","217211","Radek003003%","
                                     echo("<h2>Ile godzin, minut już żyjesz</h2>");   
                                     $sql = "SELECT imie,DATEDIFF(CURDATE(),data_urodzenia) as dni, DATEDIFF(CURDATE(),data_urodzenia)*24 as godziny, DATEDIFF(CURDATE(),data_urodzenia)*24*60 as minuty FROM pracownicy";
                             echo("<h3>".$sql."</h3>");
-                            $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
+                            $conn = new mysqli("mysql-oszust-radek.alwaysdata.net","217211","Radek003003%","oszust-radek_db");
                              $result=$conn->query($sql);
                              require("conn.php");
                                     echo("<table border=1>");
@@ -234,7 +234,7 @@ $conn = new mysqli("mysql-oszust-radek.alwaysdata.net","217211","Radek003003%","
                $sql1 = "SET lc_time_names = 'pl_PL'";
                $sql2 = "SELECT Count(DATE_FORMAT(data_urodzenia, '%W')) as IloscPracUr_Pon FROM pracownicy where DATE_FORMAT(data_urodzenia, '%W')='Poniedziałek'";
               echo("<h3>".$sql2."</h3>");
-              $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
+              $conn = new mysqli("mysql-oszust-radek.alwaysdata.net","217211","Radek003003%","oszust-radek_db");
                $result=$conn->query($sql1);
                $result=$conn->query($sql2);
                require("conn.php");
