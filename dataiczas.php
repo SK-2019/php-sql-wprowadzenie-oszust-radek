@@ -121,23 +121,6 @@ $conn = new mysqli("mysql-oszust-radek.alwaysdata.net","217211","Radek003003%","
                   }
           echo("</table>");
     
-    echo("<h2>Wypisz dzisiejszą nazwę dnia po polsku (np. poniedziałek)</h2>");
-               $sql1 = "SET lc_time_names = 'pl_PL'";
-               $sql2 = "SELECT DATE_FORMAT(CURDATE(), '%W')as data";
-              echo("<h3>".$sql."</h3>");
-              $conn = new mysqli("mysql-oszust-radek.alwaysdata.net","217211","Radek003003%","oszust-radek_db");
-               $result=$conn->query($sql1);
-               $result=$conn->query($sql2);
-               require("conn.php");
-                      echo("<table border=1>");
-                      echo("<th>data</th>");
-                      
-                          while($row=$result->fetch_assoc()) {
-                              echo("<tr>");
-                                  echo("<td>".$row["data"]."</td>");
-                              echo("</tr>");
-                          }
-                      echo("</table>");
 
                       
                       echo("<h2>Wyświetl nazwy miesięcy w dacie urodzenia</h2>");
