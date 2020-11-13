@@ -120,118 +120,103 @@ $conn = new mysqli("mysql-oszust-radek.alwaysdata.net","217211","Radek003003%","
                        echo("</tr>");
                   }
           echo("</table>");
-    
-
-                      
-                      echo("<h2>Wyświetl nazwy miesięcy w dacie urodzenia</h2>");
-                      $sql = "SELECT *, DATE_FORMAT(data_urodzenia,'%W-%M-%Y') as format FROM pracownicy";
-                     echo("<h3>".$sql."</h3>");
-                     $conn = new mysqli("mysql-oszust-radek.alwaysdata.net","217211","Radek003003%","oszust-radek_db");
-                      $result=$conn->query($sql);
-                      require("conn.php");
-                             echo("<table border=1>");
-                             echo("<th>format</th>");
-                             
-                                 while($row=$result->fetch_assoc()) {
-                                     echo("<tr>");
-                                         echo("<td>".$row["format"]."</td>");
-                                     echo("</tr>");
-                                 }
-                             echo("</table>");
-                      
-
-                             echo("<h2>Obecna, dokładna godzina (z dokładnością do milisekund)</h2>");
-                             $sql = "SELECT curtime(4)";
-                            echo("<h3>".$sql."</h3>");
-                            $conn = new mysqli("mysql-oszust-radek.alwaysdata.net","217211","Radek003003%","oszust-radek_db");
-                             $result=$conn->query($sql);
-                             require("conn.php");
-                                    echo("<table border=1>");
-                                    echo("<th>curtime(4)</th>");
-                                    
-                                        while($row=$result->fetch_assoc()) {
-                                            echo("<tr>");
-                                                echo("<td>".$row["curtime(4)"]."</td>");
-                                            echo("</tr>");
-                                        }
-                                    echo("</table>");
-
-                                    echo("<h2>Wyświetl datę urodzenia w formie: ROK-MIESIĄC-DZIEŃ  (2012-styczeń-poniedziałek)</h2>");
-                                        
-                                    $sql = "SELECT *, DATE_FORMAT(data_urodzenia,'%Y-%M-%W') as format from pracownicy";
-                            echo("<h3>".$sql."</h3>");
-                            $conn = new mysqli("mysql-oszust-radek.alwaysdata.net","217211","Radek003003%","oszust-radek_db");
-                             $result=$conn->query($sql);
-                             require("conn.php");
-                                    echo("<table border=1>");
-                                    echo("<th>data_urodzenia</th>");
-                                    
-                                        while($row=$result->fetch_assoc()) {
-                                            echo("<tr>");
-                                                echo("<td>".$row["format"]."</td>");
-                                            echo("</tr>");
-                                        }
-                                    echo("</table>");
-
-                                    
-                                    
-                                    echo("<h2>Ile godzin, minut już żyjesz</h2>");   
-                                    $sql = "SELECT imie,DATEDIFF(CURDATE(),data_urodzenia) as dni, DATEDIFF(CURDATE(),data_urodzenia)*24 as godziny, DATEDIFF(CURDATE(),data_urodzenia)*24*60 as minuty FROM pracownicy";
-                            echo("<h3>".$sql."</h3>");
-                            $conn = new mysqli("mysql-oszust-radek.alwaysdata.net","217211","Radek003003%","oszust-radek_db");
-                             $result=$conn->query($sql);
-                             require("conn.php");
-                                    echo("<table border=1>");
-                                    echo("<th>imie</th>");
-                                    echo("<th>dni</th>");
-                                    echo("<th>godziny</th>");
-                                    echo("<th>minuty</th>");
-                                    
-                                        while($row=$result->fetch_assoc()) {
-                                            echo("<tr>");
-                                                echo("<td>".$row["imie"]."</td><td>".$row["dni"]."</td><td>".$row["godziny"]."</td><td>".$row["minuty"]."</td>");
-                                            echo("</tr>");
-                                        }
-                                    echo("</table>");
-                                    
-                                    
-                                    echo("<h2>W którym dniu roku urodziłeś się / urodziłaś się</h2>");   
-                                    $sql = "SELECT DATE_FORMAT('2003-11-10', '%j') as NrDniaRoku_Urodzenie";
-                            echo("<h3>".$sql."</h3>");
-                            $conn = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
-                             $result=$conn->query($sql);
-                             require("conn.php");
-                                    echo("<table border=1>");
-                                    echo("<th>NrDniaRoku_Urodzenie</th>");
-                                    
-                                    
-                                        while($row=$result->fetch_assoc()) {
-                                            echo("<tr>");
-                                                echo("<td>".$row["NrDniaRoku_Urodzenie"]."</td>");
-                                            echo("</tr>");
-                                        }
-                                    echo("</table>");
+  
 
 
-                                    echo("<h2>Ilu pracowników urodziło się w poniedziałek</h2>");
-               $sql1 = "SET lc_time_names = 'pl_PL'";
-               $sql2 = "SELECT Count(DATE_FORMAT(data_urodzenia, '%W')) as IloscPracUr_Pon FROM pracownicy where DATE_FORMAT(data_urodzenia, '%W')='Poniedziałek'";
-              echo("<h3>".$sql2."</h3>");
-              $conn = new mysqli("mysql-oszust-radek.alwaysdata.net","217211","Radek003003%","oszust-radek_db");
-               $result=$conn->query($sql1);
-               $result=$conn->query($sql2);
-               require("conn.php");
+             require("connect.php");
+             $sql = ("SELECT *, DATE_FORMAT(data_urodzenia,'%W-%m-%Y') as format from pracownicy");
+             echo("<h2>ZADANIE 1: $sql</h2>");
+             $result=$conn->query($sql);
+             include("connect.php");
+                     echo("<table border=1>");
+                     echo("<th>Id_pracownicy</th>");
+                     echo("<th>Imie</th>");
+                     echo("<th>Dział</th>");
+                     echo("<th>Zarobki</th>");
+                     echo("<th>Data_urodzenia</th>");
+                     echo("<th>Nazwa_działu</th>");
+                     while($row=$result->fetch_assoc()) {
+                             echo("<tr>");
+                                 echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td><td>".$row["format"]."</td>");
+                             echo("</tr>");
+                         }
+                     echo("</table>");
+
+
+             require("connect.php");
+             $sql1 = ("SET lc_time_names = 'pl_PL'");
+             $sql2 = ("SELECT DATE_FORMAT(CURDATE(), '%W')as data");
+             echo("<h2>ZADANIE 2: $sql2</h2>");
+             $result=$conn->query($sql1);
+             $result=$conn->query($sql2);
+
+             include("connect.php");
+                     echo("<table border=1>");
+                     echo("<th>Data</th>");
+                     while($row=$result->fetch_assoc()) {
+                             echo("<tr>");
+                                 echo("<td>".$row["data"]."</td>");
+                             echo("</tr>");
+                         }
+                     echo("</table>");
+
+
+             require("connect.php");
+             $sql1 = ("SET lc_time_names = 'pl_PL'");
+             $sql2 = ("SELECT *, DATE_FORMAT(data_urodzenia,'%M-%W-%Y') as format from pracownicy");
+             echo("<h2>ZADANIE 3: $sql2</h2>");
+             $result=$conn->query($sql);
+             include("connect.php");
+                     echo("<table border=1>");
+                     echo("<th>Id_pracownicy</th>");
+                     echo("<th>Imie</th>");
+                     echo("<th>Dział</th>");
+                     echo("<th>Zarobki</th>");
+                     echo("<th>Data_urodzenia</th>");
+                     echo("<th>Format</th>");
+                     while($row=$result->fetch_assoc()) {
+                             echo("<tr>");
+                                 echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td><td>".$row["format"]."</td>");
+                             echo("</tr>");
+                         }
+                     echo("</table>");
+
+
+            require("connect.php");
+            $sql2 = ("SELECT curtime(4)");
+            echo("<h2>ZADANIE 4: $sql2</h2>");
+            $result=$conn->query($sql2);
+            include("connect.php");
                       echo("<table border=1>");
-                      echo("<th>IloscPracUr_Pon</th>");
-                      
-                          while($row=$result->fetch_assoc()) {
-                              echo("<tr>");
-                                  echo("<td>".$row["IloscPracUr_Pon"]."</td>");
-                              echo("</tr>");
-                          }
-                      echo("</table>");
+                     echo("<th>Curtime(4)</th>");
+                     while($row=$result->fetch_assoc()) {
+                            echo("<tr>");
+                                  echo("<td>".$row["curtime(4)"]."</td>");
+                            echo("</tr>");
+                            }
+                         echo("</table>");
 
-    
+                         
+            require("connect.php");
+            $sql1 = ("SET lc_time_names = 'pl_PL'");
+            $sql2 = ("SELECT *, DATE_FORMAT(data_urodzenia,'%Y-%M-%W') as format from pracownicy");
+            echo("<h2>ZADANIE 5: $sql2</h2>");
+            $result=$conn->query($sql1);
+            $result=$conn->query($sql2);                
+            include("connect.php");
+                    echo("<table border=1>");
+                    echo("<th>Id_pracownicy</th>");
+                    echo("<th>Imie</th>");
+                    echo("<th>Dział</th>");
+                    echo("<th>Zarobki</th>");
+                    echo("<th>Data_urodzenia</th>");
+                    echo("<th>Format</th>");
+                        while($row=$result->fetch_assoc()) {
+                                echo("<tr>");
+                                    echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td><td>".$row["format"]."</td>");
+                                echo("</tr>");
+                            }
+                        echo("</table>");
 
   
   ?>
