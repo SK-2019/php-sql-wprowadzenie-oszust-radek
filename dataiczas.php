@@ -123,8 +123,8 @@ $conn = new mysqli("mysql-oszust-radek.alwaysdata.net","217211","Radek003003%","
     
     echo("<h2>Wypisz dzisiejszą nazwę dnia po polsku (np. poniedziałek)</h2>");
                $sql1 = "SET lc_time_names = 'pl_PL'";
-               $sql2 = "SELECT DATE_FORMAT(CURDATE(), '%W')as data";
-              echo("<h3>".$sql2."</h3>");
+               $sql2 = "SELECT DATE_FORMAT(CURDATE(),"%W")as data";
+              echo("<h3>".$sql."</h3>");
               $conn = new mysqli("mysql-oszust-radek.alwaysdata.net","217211","Radek003003%","oszust-radek_db");
                $result=$conn->query($sql1);
                $result=$conn->query($sql2);
