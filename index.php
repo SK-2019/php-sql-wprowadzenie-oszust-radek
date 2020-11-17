@@ -13,6 +13,7 @@
         <h4><a href="agregat.php">F. agregujace</a></h4>
         <h4><a href="pracownicy.php">Pracownicy</a></h4>
         <h4><a href="dataiczas.php">Data i czas</a></h4>
+        <h4><a href="strona.php">Strona</a></h4>
 </div>
 
     <form action="strona.php" method="POST">
