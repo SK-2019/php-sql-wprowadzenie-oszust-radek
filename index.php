@@ -16,9 +16,9 @@
 </div>
 
     <form action="strona.php" method="POST">
-        <input type="text" name="name">
-        <input type="text" name="lastname">
-        <input type="text" name="country">
+        <input type="text" name="name"></br>
+        <input type="text" name="lastname"></br>
+        <input type="text" name="country"></br>
         <input type="submit" value="wyślij do strona.php">
     </form>
 
