@@ -37,3 +37,7 @@ text-decoration: none;
 a:hover {
   background-color: orange;
 }
+
+input{
+  margin: 1px;
+}
