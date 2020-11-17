@@ -17,7 +17,9 @@
 
     <form action="strona.php" method="POST">
         <input type="text" name="name">
-        <input type="submit" value="wyślij gdzieś">
+        <input type="text" name="lastname">
+        <input type="text" name="country">
+        <input type="submit" value="wyślij do strona.php">
     </form>
 
         <?php
