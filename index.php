@@ -14,6 +14,12 @@
         <h4><a href="pracownicy.php">Pracownicy</a></h4>
         <h4><a href="dataiczas.php">Data i czas</a></h4>
 </div>
+
+    <form action="" method="POST">
+        <input type="text" name="name">
+        <input type="submit" value="wyślij gdzieś">
+    </form>
+
         <?php
             echo("<h1>Radek Oszust</h1>");
             require_once("connect.php");
