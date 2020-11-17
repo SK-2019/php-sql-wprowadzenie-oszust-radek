@@ -15,7 +15,7 @@
         <h4><a href="dataiczas.php">Data i czas</a></h4>
 </div>
 
-    <form action="" method="POST">
+    <form action="strona.php" method="POST">
         <input type="text" name="name">
         <input type="submit" value="wyślij gdzieś">
     </form>
