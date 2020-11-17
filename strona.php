@@ -9,9 +9,9 @@
 <body>
     <div class="s">
 <?php
-  echo("<li> Imie: ".$_POST['imie']."</li>");
-  echo("<li> Dzial: ".$_POST['nazwisko']."</li>");
-  echo("<li> Zarobki: ".$_POST['country']."</li>");
+  echo("<li> imie: ".$_POST['imie']."</li>");
+  echo("<li> nazwisko: ".$_POST['nazwisko']."</li>");
+  echo("<li> kraj: ".$_POST['country']."</li>");
   
 ?>
     </div>  
