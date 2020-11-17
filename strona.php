@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html>
   <head>
     <link rel="stylesheet" href="style.css">
@@ -7,7 +7,7 @@
 <?php
   echo("strona.php");
 
-  echo($_POST['name']);
-  echo($_POST['lastname']);
-  echo($_POST['country']);
+  echo("<li> imie: ".$_POST['name']."</li>");
+  echo("<li> nazwisko:".$_POST['lastname']"</li>");
+  echo("<li> kraj: ".$_POST['country']."</li>");
 ?>
