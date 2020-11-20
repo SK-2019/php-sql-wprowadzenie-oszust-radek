@@ -10,6 +10,7 @@
   echo("<li> imie: ".$_POST['imie']."</li>");
   echo("<li> nazwisko: ".$_POST['nazwisko']."</li>");
   echo("<li> kraj: ".$_POST['country']."</li>");
+        
   
 ?>
     </div>  
