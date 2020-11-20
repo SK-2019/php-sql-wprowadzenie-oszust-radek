@@ -7,9 +7,9 @@
 <body>
     <div class="s">
 <?php
-  echo("<li> imie: ".$_POST['imie']."</li>");
-  echo("<li> nazwisko: ".$_POST['nazwisko']."</li>");
-  echo("<li> kraj: ".$_POST['kraj']."</li>");
+  echo("<li> firstname: ".$_POST['imie']."</li>");
+  echo("<li> lastname: ".$_POST['nazwisko']."</li>");
+  echo("<li> country: ".$_POST['kraj']."</li>");
   echo("<li> phone: ".$_POST['nr telefonu']."</li>");      
   
 ?>
