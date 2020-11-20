@@ -17,9 +17,10 @@
 </div>
 
     <form action="strona.php" method="POST">
-        <input type="text" name="name"></br>
+        <input type="text" name="firstname"></br>
         <input type="text" name="lastname"></br>
         <input type="text" name="country"></br>
+        <input type="text" name="phone"></br>
         <input type="submit" value="wyślij do strona.php">
     </form>
 
