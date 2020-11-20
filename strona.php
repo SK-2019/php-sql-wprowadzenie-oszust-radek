@@ -7,10 +7,10 @@
 <body>
     <div class="s">
 <?php
-  echo("<li> firstname: ".$_POST['imie']."</li>");
-  echo("<li> lastname: ".$_POST['nazwisko']."</li>");
-  echo("<li> country: ".$_POST['kraj']."</li>");
-  echo("<li> phone: ".$_POST['nr telefonu']."</li>");      
+  echo("<li> firstname: ".$_POST['firstname']."</li>");
+  echo("<li> lastname: ".$_POST['lastname']."</li>");
+  echo("<li> country: ".$_POST['country']."</li>");
+  echo("<li> phone: ".$_POST['phone']."</li>");      
   
 ?>
     </div>  
