@@ -1,5 +1,5 @@
 <?php
-  echo("jestes w insert.php <br>");
+  echo("witaj w insert<br>");
   echo "<li>". $_POST['name'];
   echo "<li>". $_POST['dzial'];
   echo "<li>". $_POST['zarobki'];
