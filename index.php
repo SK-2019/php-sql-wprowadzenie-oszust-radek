@@ -14,6 +14,7 @@
         <h4><a href="pracownicy.php">Pracownicy</a></h4>
         <h4><a href="dataiczas.php">Data i czas</a></h4>
         <h4><a href="strona.php">Strona</a></h4>
+        <a href="formularz.html">Formularz</a>
 </div>
 
     <form action="strona.php" method="POST">
