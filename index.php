@@ -15,6 +15,7 @@
         <h4><a href="dataiczas.php">Data i czas</a></h4>
         <h4><a href="strona.php">Strona</a></h4>
         <a href="formularz.html">Formularz</a>
+        <h4><a href="insert.php">Insert</a></h4>
 </div>
 
     <form action="strona.php" method="POST">
