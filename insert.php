@@ -1,20 +1,12 @@
 <?php
+
 require_once("connect.php");
+$sql =  "INSERT INTO `pracownicy`(`id_pracownicy`, `imie`, `dzial`, `zarobki`, `data_urodzenia`) VALUES (NULL,'".$_POST['imie']."','".$_POST['dzial']."','".$_POST['zarobki']."','".$_POST['data_']."')";
+echo($sql);
+mysqli_query($conn,$sql);
+mysqli_close($conn);
 
-$conn = new mysqli("mysql-oszust-radek.alwaysdata.net","217211","Radek003003%","oszust-radek_db");
-
-  $sql = "INSERT INTO Pracownik (id, imie, dzial, zarobki,data_urodzenia) 
-       VALUES (null,'Balbina', 4, 86,'1999-05-21')";
-
-
-if ($conn->query($sql) === TRUE) {
-  echo "New record created successfully";
-} else {
-
-  echo "Error: " . $sql . "<br>" . $conn->error;
-}
-
-$conn->close();
+?>
       
 
   
