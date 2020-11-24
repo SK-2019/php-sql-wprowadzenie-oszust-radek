@@ -1,4 +1,6 @@
 <?php
+require_once("connect.php");
+
   echo("witaj w insert<br>");
   echo "<li>". $_POST['name'];
   echo "<li>". $_POST['dzial'];
@@ -7,7 +9,7 @@
 
     $conn = new mysqli(mysql-oszust-radek.alwaysdata.net","217211","Radek003003%","oszust-radek_db);
     
-      require_once("connect.php");
+      
 
   $sql = "INSERT INTO Pracownik (id_pracownicy, name, dzial,zarobki,data_urodzenia)
           VALUES (
