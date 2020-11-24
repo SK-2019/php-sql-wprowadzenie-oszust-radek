@@ -1,33 +1,35 @@
 <?php
 require_once("connect.php");
 
-  echo("witaj w insert<br>");
-  echo "<li>". $_POST['name'];
-  echo "<li>". $_POST['dzial'];
-  echo "<li>". $_POST['zarobki'];
-  echo "<li>". $_POST['data_urodzenia'];
+  echo("jestes w insert.php <br>");
+echo "<li>". $_POST['name'];
+echo "<li>". $_POST['dzial'];
+echo "<li>". $_POST['zarobki'];
+echo "<li>". $_POST['data_urodzenia'];
 
     $conn = new mysqli(mysql-oszust-radek.alwaysdata.net","217211","Radek003003%","oszust-radek_db);
     
+$sql = "INSERT INTO Pracownik (null, name, dzial,zarobki,data_urodzenia)
+	      VALUES (
+				  null,". 
+					$_POST['name'].", 
+					".$_POST['dzial'].", 
+					".$_POST['zarobki'].",
+					".$_POST['data_urodzenia']."
+				;
+
+
+echo "<li>". $sql;
+
+if ($conn->query($sql) === TRUE) {
+  echo "New record created successfully";
+} else {
+  echo "Error: " . $sql . "<br>" . $conn->error;
+}
+
+$conn->close();
       
 
-  $sql = "INSERT INTO Pracownik (id_pracownicy, name, dzial,zarobki,data_urodzenia)
-          VALUES (
-            null, 
-            '.$_POST['name'].', 
-            '.$_POST['dzial'].', 
-            '.$_POST['zarobki'].',
-           '.$_POST['data_urodzenia'].'
-          )";
-
-        echo "<li>". $sql;
-
-    if ($conn->query($sql) === TRUE) {
-      echo "New record created successfully";
-    } else {
-      echo "Error: " . $sql . "<br>" . $conn->error;
-    }
-
-    $conn->close();
+  
     ?>
 
