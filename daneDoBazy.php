@@ -4,7 +4,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
 <link rel="stylesheet" href="style.css">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <title>Dane do Bazy</title>
 </head>
 <body>
