@@ -8,6 +8,8 @@
   <title>Dane do Bazy</title>
 </head>
 <body>
+	<div class="con">
+    <a class="k" href="index.php">Wróć do strony głównej</a>
 	<form action="insert.php" method="POST">
 	    	<input type="text" name="imie">
 		<input type="number" name="dzial"></br>
