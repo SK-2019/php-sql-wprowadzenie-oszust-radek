@@ -19,14 +19,6 @@
         <h4><a href="daneDoBazy.html">Insert</a></h4>
 </div>
 
-    <form action="strona.php" method="POST">
-        <input type="text" name="firstname"></br>
-        <input type="text" name="lastname"></br>
-        <input type="text" name="country"></br>
-        <input type="text" name="phone"></br>
-        <input type="submit" value="wyślij do strona.php">
-    </form>
-
         <?php
             echo("<h1>Radek Oszust</h1>");
             require_once("connect.php");
