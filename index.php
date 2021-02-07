@@ -21,7 +21,7 @@
 
         <?php
             echo("<h1>Radek Oszust</h1>");
-            require_once("connect.php");
+            include("connect.php");
 
             echo("<h2>Zad1</h2>");
             echo("<h3>SELECT count(imie) as kjl, dzial, nazwa_dzial FROM pracownicy, organizacja where dzial=id_org group by dzial</h3>");
