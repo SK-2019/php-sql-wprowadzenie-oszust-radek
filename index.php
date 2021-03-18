@@ -20,6 +20,8 @@
 </div>
 
         <?php
+        $d=strtotime("now");
+        echo "<li>".date("Y-m-d h:i:sa", $d) . "<br>";
             echo("<h1>Radek Oszust</h1>");
             require_once("assets/connect.php");
 
