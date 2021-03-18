@@ -1,15 +1,7 @@
 <?php
-
-$servername = "mysql-oszust-radek.alwaysdata.net";
-$username = "217211";
-$password = "Radek003003%";
-$dbname = "oszust-radek_db";
-
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
+require_once("config.php");
+$conn = new mysqli($_SERVER['MYSQL_SERV'],$_SERVER['MYSQL_NAME'], $_SERVER['MYSQL_PS'], $_SERVER['MYSQL_DB']);
 if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
+    die("connection failed: ".mysqli_connect_error());
 }
-
 ?>

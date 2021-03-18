@@ -16,16 +16,15 @@
         <h4><a href="/pracownicy/dataiczas.php">Data i czas</a></h4>
         <h4><a href="/dane-do-bazy/strona.php">Strona</a></h4>
         <a href="/dane-do-bazy/formularz.html">Formularz</a>
-        <h4><a href="/dane-do-bazy/daneDoBazy.html">Insert</a></h4>
+        <h4><a href="/dane-do-bazy/daneDoBazy.php">Insert</a></h4>
 </div>
 
         <?php
             echo("<h1>Radek Oszust</h1>");
-            include("connect.php");
+            require_once("assets/connect.php");
 
             echo("<h2>Zad1</h2>");
             echo("<h3>SELECT count(imie) as kjl, dzial, nazwa_dzial FROM pracownicy, organizacja where dzial=id_org group by dzial</h3>");
-            $conn=new mysqli("mysql-oszust-radek.alwaysdata.net","217211","Radek003003%","oszust-radek_db");
             $result=$conn->query('SELECT count(imie) as kjl, dzial, nazwa_dzial FROM pracownicy, organizacja where dzial=id_org group by dzial');
             echo("<table border=1>");
             echo("<th>count(imie)</th>");
@@ -41,7 +40,7 @@
 
             echo("<h2>Zad2</h2>");
             echo("<h3>SELECT * FROM pracownicy where dzial=1</h3>");
-            $conn=new mysqli("mysql-oszust-radek.alwaysdata.net","217211","Radek003003%","oszust-radek_db");
+    
             $result=$conn->query('SELECT * FROM pracownicy where dzial=1');
             echo("<table border=1>");
             echo("<th>id</th>");
@@ -57,7 +56,7 @@
 
             echo("<h2>Zad3</h2>");
             echo("<h3>SELECT * FROM pracownicy where imie not like '%a'</h3>");
-            $conn=new mysqli("mysql-oszust-radek.alwaysdata.net","217211","Radek003003%","oszust-radek_db");
+            
             $result=$conn->query('SELECT * FROM pracownicy where imie not like "%a"');
             echo("<table border=1>");
             echo("<th>id</th>");
@@ -73,7 +72,7 @@
 
             echo("<h2>Zad4</h2>");
             echo("<h3>SELECT * FROM pracownicy where zarobki>30</h3>");
-            $conn=new mysqli("mysql-oszust-radek.alwaysdata.net","217211","Radek003003%","oszust-radek_db");
+            
             $result=$conn->query('SELECT * FROM pracownicy where zarobki>30');
             echo("<table border=1>");
             echo("<th>id</th>");
@@ -89,7 +88,7 @@
 
             echo("<h2>Zad5</h2>");
             echo("<h3>SELECT * FROM pracownicy where zarobki<45</h3>");
-            $conn=new mysqli("mysql-oszust-radek.alwaysdata.net","217211","Radek003003%","oszust-radek_db");
+            
             $result=$conn->query('SELECT * FROM pracownicy where zarobki<45');
             echo("<table border=1>");
             echo("<th>id</th>");
