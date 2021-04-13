@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>strona</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/assets/style.css">
     <link rel="icon" href="https://www.favicon.cc/logo3d/308168.png">
 </head>
 <body>
