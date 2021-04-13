@@ -133,8 +133,19 @@
     text-decoration: none;
     color: black;
     transition: 0.5s;
+}
     
-.menu2 {
+.menu:hover {
+    padding: 2rem;
+    margin: 2px;
+    background-color: pink;
+    text-decoration: none;
+    color: white; 
+}
+    
+    
+    
+
     .flex-container.align-items-start {
   -webkit-align-items: flex-start;
   -ms-flex-align: start;
@@ -163,4 +174,4 @@
   webkit-align-items: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
-    }}
+    }
