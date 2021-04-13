@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="/assets/style.css">
 	<link rel="icon" href="https://www.favicon.cc/logo3d/308168.png">
   <title>Dane do Bazy</title>
 </head>
