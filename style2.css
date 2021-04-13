@@ -12,7 +12,7 @@ background: lightred;
 }
 .nav {
     background-color: yellow;
-    width: 200px;
+    width: 350px;
     height: 200px;
     margin: 10px;
 }
@@ -139,7 +139,13 @@ background: lightred;
     transition: 0.5s;
 }
     
-
+.menu:hover {
+    padding: 2rem;
+    margin: 2px;
+    background-color: pink;
+    text-decoration: none;
+    color: white; 
+}
     
     
     
