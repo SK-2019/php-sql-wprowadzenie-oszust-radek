@@ -126,18 +126,18 @@
   
 }
 
-.linkcontainer2{
+.menu:hover{
     padding:10px;
     text-decoration: none;
     background:lightseagreen;
 
-.linkcontainer2:hover {
+.menu {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
 }
 
-.flex-container.row-reverse {
+.men {
   -webkit-flex-direction: row-reverse;
   -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
