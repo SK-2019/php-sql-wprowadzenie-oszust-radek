@@ -25,13 +25,13 @@ h1 {
 }
 
 h2 {
-  text-shadow: 2px 2px;
+  text-shadow: 1px 1px;
 }
 
 a {
 text-decoration: none;
   background-color: rgb(79, 196, 250);
-  padding: 4px;
+  padding: 3px;
 }
 
 a:hover {
@@ -39,5 +39,5 @@ a:hover {
 }
 
 input{
-  margin: 3px;
+  margin: 2px;
 }
