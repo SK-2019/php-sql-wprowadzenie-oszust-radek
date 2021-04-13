@@ -3,7 +3,7 @@
     width: 70%;
     height: 400px;
     margin: 10px;
-    transition: 0.4s;
+    transition: 0.6s;
 }
 
 .nav {
@@ -20,6 +20,7 @@
     margin: 10px;
     display: flex;
     justify-content: flex-end;
+    transition: 0.6s;
 }
 
 .container3 {
@@ -29,6 +30,7 @@
     margin: 10px;
     display: flex;
     align-items: flex-end;
+    transition: 0.6s;
 }
 
 .container4 {
@@ -39,6 +41,7 @@
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
+    transition: 0.6s;
 }
 
 .container5 {
@@ -48,6 +51,7 @@
     margin: 10px;
     display: flex;
     justify-content: center;
+    transition: 0.6s;
 }
 
 .container6 {
@@ -58,6 +62,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.6s;
 }
 
 .container7 {
@@ -68,6 +73,7 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    transition: 0.6s;
 }
 
 .container8 {
@@ -76,6 +82,7 @@
     height: 400px;
     margin: 10px;
     display: flex;
+    transition: 0.6s;
 }
 
 .container9 {
@@ -85,6 +92,7 @@
     margin: 10px;
     display: flex;
     justify-content: center;
+    transition: 0.6s;
 }
 
 .container10 {
@@ -95,6 +103,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.6s;
 }
 
 .container11 {
@@ -105,6 +114,7 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    transition: 0.6s;
 }
 
 .container12 {
@@ -113,4 +123,5 @@
     height: 400px;
     margin: 10px;
     display: flex;
+    transition: 0.6s;
 }
