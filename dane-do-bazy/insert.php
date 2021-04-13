@@ -24,12 +24,12 @@ require_once("../connect.php");
 $sql = "INSERT INTO pracownicy (id_pracownicy,imie, dzial, zarobki, data_urodzenia) 
         VALUES (null,'".$_POST['imie']."', ".$_POST['dzial'].", ".$_POST['zarobki'].",'".$_POST['data_urodzenia']."')";
 
-//obsługa błędów zapisu do bazy
+
 if ($conn->query($sql) === TRUE) {
   echo("<li>New record created successfully</li>");
   header('Location: daneDoBazy.php');
 } else {
-//informacja o ewentualnych błędach
+
   echo "Error: " . $sql . "<br>" . $conn->error;
 }
 
