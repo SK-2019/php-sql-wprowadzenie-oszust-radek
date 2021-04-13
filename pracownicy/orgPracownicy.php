@@ -7,6 +7,9 @@
         <link rel="icon" href="https://www.favicon.cc/logo3d/308168.png">
     </head>
 <body>
+    <div class="container">
+<div class="item colorRed">
+    <h1 class="title">Radek Oszust</h1>
     <div class="nav">
         <h2>linki</h2>
         <h4><a href="https://github.com/SK-2019/php-sql-wprowadzenie-oszust-radek">Github</a></h4>
