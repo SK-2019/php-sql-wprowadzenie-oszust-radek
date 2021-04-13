@@ -126,31 +126,10 @@
   
 }
 
-.menu:hover{
-    padding:10px;
-    text-decoration: none;
-    background:lightseagreen;
-
 .menu {
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.men {
-  -webkit-flex-direction: row-reverse;
-  -ms-flex-direction: row-reverse;
-  flex-direction: row-reverse;
-}
-
-.flex-container.column {
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.flex-container.column-reverse {
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column-reverse;
-}
+    padding: 0.75rem;
+    margin: 1px;
+    background-color: pink;
+    text-decoration: none;
+    color: lightgrey;
+    transition: 0.5s;
