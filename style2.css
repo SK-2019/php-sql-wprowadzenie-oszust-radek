@@ -133,3 +133,34 @@
     text-decoration: none;
     color: lightgrey;
     transition: 0.5s;
+    
+.menu2 {
+    .flex-container.align-items-start {
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.flex-container.align-items-end {
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+.flex-container.align-items-center {
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.flex-container.align-items-baseline {
+  webkit-align-items: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+}
+
+.flex-container.align-items-stretch {
+  webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+    }}
