@@ -13,7 +13,7 @@
 </div>
 <div class="item colorBlue">
     <div class="nav">
-        
+       <h2>
         <li class="nav_item"><a href="https://github.com/SK-2019/php-sql-wprowadzenie-oszust-radek">Github</a></li>
         <li class="nav_item"><a href="index.php">Strona główna</a></li>
         <li class="nav_item"><a href="/pracownicy/orgPracownicy.php">Org i Prac</a></li>
@@ -22,7 +22,7 @@
         <li class="nav_item"><a href="/dane-do-bazy/strona.php">Strona</a></li>
         <li class="nav_item"><a href="/dane-do-bazy/formularz.html">Formularz</a></li>
         <li class="nav_item"><a href="/dane-do-bazy/daneDoBazy.html">Insert</a></li>
-       
+       </h2>
 </div>
 <div class="item colorGreen"></div>
 
