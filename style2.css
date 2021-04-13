@@ -168,4 +168,20 @@ background: lightred;
     margin: 5px;
     font-size: 20px;    
     
+.menu3 {
+    padding: 15px;
+    margin: 1px;
+    background-color: white;
+    text-decoration: none;
+    color: darkpink;
+    transition: 0.8s;
+    display: block;
+    border-radius: 10px;
+}
+
+.menu3:hover {
+    margin: 1px;
+    border-radius: 100%;
+    transform: rotate(360deg);
+    
 
