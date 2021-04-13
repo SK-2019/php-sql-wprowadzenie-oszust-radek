@@ -139,13 +139,7 @@ background: lightred;
     transition: 0.5s;
 }
     
-.menu:hover {
-    padding: 2rem;
-    margin: 2px;
-    background-color: pink;
-    text-decoration: none;
-    color: white; 
-}
+
     
     
     
