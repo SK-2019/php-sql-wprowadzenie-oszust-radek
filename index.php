@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="/assets/style.css">
 </head>
 <body>
+    <div class="container">
+      <div class="item colorRed">
+        <h1 class="title">Radek Oszust</h1>
+      </div>
     <div class="nav">
         <h2>linki</h2>
         <h4><a href="https://github.com/SK-2019/php-sql-wprowadzenie-oszust-radek">Github</a></h4>
