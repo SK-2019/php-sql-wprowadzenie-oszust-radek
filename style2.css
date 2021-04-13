@@ -182,9 +182,15 @@ background: lightred;
 }
 
 .menu3:hover {
+    background-color: white;
     padding: 15;
-    margin: 1px;
-    border-radius: 100%;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
     transform: rotate(360deg);
+    transition: 0,4s;
+    margin: 5px;
+    font-size: 20px;   
     
 
