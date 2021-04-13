@@ -142,7 +142,7 @@ background: lightred;
 .menu:hover {
     padding: 2rem;
     margin: 2px;
-    background-color: pink;
+    background-color: lightred;
     text-decoration: none;
     color: white; 
 }
