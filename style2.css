@@ -148,23 +148,23 @@ background: lightred;
 }
     
 .menu2 {
-    background-color: rgb(20, 255, 140);
+    background-color: cyan;
     text-decoration: none;
     padding: 10px;
     border-radius: 1px;
     margin: 1px;
-    transition: 0.2s;
+    transition: 0.4s;
     display: inline-block;
-    height: 20%;
+    height: 15%;
 }
         
 .menu2:hover {
-    background-color: rgb(163, 161, 59);
+    background-color: black;
     padding: 15;
-    border-bottom-right-radius: 27px;
+    border-bottom-right-radius: 30px;
     border-bottom-left-radius: 30px;
     border-top-right-radius: 25px;
-    border-top-left-radius: 50px;
+    border-top-left-radius: 25px;
     margin: 5px;
     font-size: 20px;    
     
