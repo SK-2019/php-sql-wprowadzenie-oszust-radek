@@ -147,6 +147,25 @@ background: lightred;
     color: white; 
 }
     
-    
+.menu2 {
+    background-color: rgb(20, 255, 140);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 1px;
+    margin: 1px;
+    transition: 0.2s;
+    display: inline-block;
+    height: 20%;
+}
+        
+.menu2:hover {
+    background-color: rgb(163, 161, 59);
+    padding: 15;
+    border-bottom-right-radius: 27px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 50px;
+    margin: 5px;
+    font-size: 20px;    
     
 
