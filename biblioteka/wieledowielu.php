@@ -7,7 +7,9 @@
     <link rel="shortcut icon" href="/inne/favicon.ico">
 </head>
 
-
+ <?php include("../header.php"); ?>
+        
+       <?php include("../menu.php"); ?>
 
 
 <div class="con">
