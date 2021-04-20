@@ -9,7 +9,7 @@
 <body>
 <div class="container">
     <div class="item colorRed">
-        <?php include("notion.php"); ?>
+        <title> Radek Oszust </title>
 </div>
 <div class="item colorBlue">
     <div class="nav">
