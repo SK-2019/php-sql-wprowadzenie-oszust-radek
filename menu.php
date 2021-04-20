@@ -8,6 +8,12 @@
 </head>
 <body>
 
+      <div class="container">
+    <div class="item colorRed">
+</div>
+<div class="item colorBlue">
+    <div class="nav">
+        
        <?php include("menu.php) ?>
         <li class="nav_item"><a href="https:/github.com/SK-2019/php-sql-wprowadzenie-oszust-radek">Github</a></li>
         <li class="nav_item"><a href="/pracownicy/orgPracownicy.php">Org i Prac</a></li>
@@ -19,6 +25,9 @@
         <li class="nav_item"><a href="/dane-do-bazy/formularz.html">Formularz</a></li>
         <li class="nav_item"><a href="/dane-do-bazy/daneDoBazy.html">Insert</a></li>
        
+</div>
+<div class="item colorGreen"></div>
+</div>
       </body>
       </html>
 
