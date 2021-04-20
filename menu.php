@@ -1,5 +1,5 @@
-        <a class="nav_item"><a href="https://www.notion.so/SQL-3ccfadeab4b84d7794d7a13966de2547">Notion</a>
-        <li class="nav_item"><a href="https:/github.com/SK-2019/php-sql-wprowadzenie-oszust-radek">Github</a></li>
+
+         <li class="nav_item"><a href="https:/github.com/SK-2019/php-sql-wprowadzenie-oszust-radek">Github</a></li>
         <li class="nav_item"><a href="/pracownicy/orgPracownicy.php">Org i Prac</a></li>
         <li class="nav_item"><a href="/pracownicy/agregat.php">F. agregujace</a></li>
         <li class="nav_item"><a href="/pracownicy/pracownicy.php">Pracownicy</a></li>
