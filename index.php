@@ -9,7 +9,9 @@
 <body>
 <div class="container">
     <div class="item colorRed">
-        <title> Radek Oszust </title>
+        <title>Radek Oszust</title>
+        
+        <?php include("header.php"); ?>
 </div>
 <div class="item colorBlue">
     <div class="nav">
