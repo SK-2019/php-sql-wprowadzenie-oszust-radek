@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="/assets/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/inne/favicon.ico">
+    <link rel="shortcut icon" href="https://www.favicon.cc/logo3d/308168.png">
 </head>
 
  <?php include("../header.php"); ?>
