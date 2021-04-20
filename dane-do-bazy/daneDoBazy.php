@@ -9,8 +9,8 @@
 </head>
 <body>
 	<div class="con">
-    <a class="k" href="/index.php">Wróć do strony głównej</a>
-	<form action="/dane-do-bazy/insert.php" method="POST">
+    <a class="k" href="index.php">Wróć do strony głównej</a>
+	<form action="insert.php" method="POST">
 	    	<input type="text" name="imie">
 		<input type="number" name="dzial"></br>
 		<input type="number" name="zarobki"></br>
