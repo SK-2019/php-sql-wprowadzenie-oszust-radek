@@ -6,4 +6,4 @@
         <li class="nav_item"><a href="flexbox/flexbox.html">Flexbox</a></li>
         <li class="nav_item"><a href="/dane-do-bazy/strona.php">Strona</a></li>
         <li class="nav_item"><a href="/dane-do-bazy/formularz.html">Formularz</a></li>
-        <li class="nav_item"><a href="/dane-do-bazy/daneDoBazy.html">Insert</a></li>
+        <li class="nav_item"><a href="/dane-do-bazy/daneDoBazy.php">Insert</a></li>
