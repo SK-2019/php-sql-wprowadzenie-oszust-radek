@@ -1,2 +1,2 @@
 <h1 class="title">Radek Oszust</h1>
-<li href="https://www.notion.so">Notion</a></li>
+<a href="https://www.notion.so">Notion</a>
