@@ -8,13 +8,22 @@
     <title>Insert</title>
 </head>
 <body>
-    
+<div class="item colorBlue">
+<?php include("../assets/header.php"); ?>
+</div>
+<div class="item colorBlue">
+    <div class="nav">
+        
+       <?php include("../assets/menu.php"); ?>
+   
+</div>
+</div>
 </body>
 </html>
 
 <?php
+require_once("../assets/connect.php");
 
-echo("jestes w insert.php");
 echo "<li>". $_POST['name'];
 echo "<li>". $_POST['dzial'];
 echo "<li>". $_POST['zarobki'];
@@ -23,7 +32,7 @@ echo "<li>". $_POST['data_urodzenia'];
 
 
 
-$conn = new mysqli("mysql-oszust-radek.alwaysdata.net","217211","Radek003003%","oszust-radek_db");
+
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }

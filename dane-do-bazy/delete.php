@@ -1,6 +1,6 @@
 <?php
 
-require_once("connect.php");
+require_once("../assets/connect.php");
 
 
 if ($conn->connect_error) {

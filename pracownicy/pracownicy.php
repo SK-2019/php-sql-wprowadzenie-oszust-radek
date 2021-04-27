@@ -38,7 +38,6 @@
             }
 
         echo("</table>");
-    require("connect.php");
     echo("<h2>ZADANIE 2: SELECT * FROM pracownicy, organizacja where (dzial=1 or dzial=2)</h2>");  
     $result = $conn->query('SELECT * FROM pracownicy, organizacja where (dzial=1 or dzial=2)'); 
     echo("<table border=1>");
@@ -53,7 +52,6 @@
     
 
         echo("</table>");
-    require("connect.php");
     echo("<h2>ZADANIE 3: SELECT * FROM pracownicy, organizacja WHERE zarobki<30</h2>");  
     $result = $conn->query('SELECT * FROM pracownicy, organizacja WHERE zarobki<30'); 
         echo("<table border=1>");

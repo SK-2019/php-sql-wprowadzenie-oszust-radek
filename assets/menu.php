@@ -1,4 +1,5 @@
         <a class="nav_item" href="https:/github.com/SK-2019/php-sql-wprowadzenie-oszust-radek">Github</a>
+        <a class="nav_item" href="https://php-oszust-radek.herokuapp.com">STRONA GLOWNA</a>
         <a class="nav_item" href="/pracownicy/orgPracownicy.php">Org i Prac</a>
         <a class="nav_item" href="/pracownicy/agregat.php">F. agregujace</a>
         <a class="nav_item" href="/pracownicy/pracownicy.php">Pracownicy</a>
@@ -13,3 +14,4 @@
         <a class="nav_item" href="/relacje/szkola.php">Szkola</a>
         <a class="nav_item" href="/relacje/biblioteka.php">Biblioteka</a>
         <a class="nav_item" href="/relacje/spa.php">Spa</a>
+       
