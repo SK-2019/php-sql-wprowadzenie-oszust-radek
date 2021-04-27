@@ -20,11 +20,11 @@
 </div>
 <div class="item colorGreen"></div>
 
-
+<div class="con">
 
 <?php
 
-    require("connect.php");
+    require_once("../assets/connect.php");
     echo("<h2>ZADANIE 1: SELECT * FROM pracownicy, organizacja WHERE dzial=2</h2>");
     $result = $conn->query('SELECT * FROM pracownicy, organizacja WHERE dzial=2');
         echo("<table border=1>");
@@ -71,6 +71,6 @@
         echo("</table>");
 
 ?>
-    
+    </div>
 </body>
 </html>

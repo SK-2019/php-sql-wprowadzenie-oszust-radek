@@ -21,10 +21,10 @@
 <div class="item colorGreen"></div>
 
 
-
+<div class="con">
 <?php
 
-    require("connect.php");
+    require_once("../assets/connect.php");
     echo("<h2>ZADANIE 1: SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organizacja WHERE dzial = id_org and imie not like %a</h2>");
     $result = $conn->query('SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organizacja WHERE dzial = id_org and imie not like "%a"');
         echo("<table border=1>");
@@ -179,6 +179,6 @@
     
             echo("</table>");
 ?>
-    
+    </div>
 </body>
 </html>

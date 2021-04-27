@@ -33,7 +33,7 @@
 
 <?php
 
-require_once("connect.php");
+require_once("../assets/connect.php");
 
 $sql = ("SELECT id_pracownicy, imie, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organizacja where dzial=id_org");
 $result=$conn->query($sql);

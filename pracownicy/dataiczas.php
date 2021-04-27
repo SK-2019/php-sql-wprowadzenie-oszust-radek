@@ -22,9 +22,9 @@
 
 </head>
 <body>
-
+<div class="con">
 <?php
-
+require_once("../assets/connect.php");
 echo("<h2>Zad1</h2>");
  $sql = "SELECT * ,YEAR(curdate())-YEAR(data_urodzenia) AS wiek FROM pracownicy, organizacja WHERE (dzial = id_org)";
 echo("<h3>".$sql."</h3>");
@@ -225,3 +225,4 @@ $conn = new mysqli("mysql-oszust-radek.alwaysdata.net","217211","Radek003003%","
 
   
   ?>
+    </div>
