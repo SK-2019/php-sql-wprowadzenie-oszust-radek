@@ -93,6 +93,7 @@ align-items: stretch;
     position: fixed;
     padding: 10px;
     display: flex;
+    align-items: space-around;
     justify-content: center;
     flex-direction: column;
   }
