@@ -84,21 +84,21 @@ align-items: stretch;
   .nav_item{
     float: left;
     text-decoration: none;
-    height: 45px;
-    width: 250px;
-    background-color: rgb(0, 0, 0, 0.4);
-    color:white;
+    height: 30px;
+    width: 100px;
+    background-color: rgba(18, 225, 240, 0.726);
+    color:rgb(255, 255, 255);
     align-items: center;
     display: flex;
     justify-content: center;
     border-radius: 11px;
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+   
+    margin-top: 5px;
+   
   }
 
   .nav{
-    position: absolute;
+    position: fixed;
     height: 100%;
     width: 250px;
     align-items: space-around;
