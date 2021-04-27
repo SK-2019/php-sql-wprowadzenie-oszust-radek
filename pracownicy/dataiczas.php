@@ -6,24 +6,19 @@
     <link rel="stylesheet" href="/assets/style.css">
     <link rel="icon" href="https://www.favicon.cc/logo3d/308168.png">
     
-    <div class="container">
-    <div class="item colorRed">
-        <h1 class="title">Radek Oszust</h1>
+    
+    <div class="item colorBlue">
+<?php include("../assets/header.php"); ?>
 </div>
 <div class="item colorBlue">
     <div class="nav">
         
-        <li class="nav_item"><a href="https://github.com/SK-2019/php-sql-wprowadzenie-oszust-radek">Github</a></li>
-        <li class="nav_item"><a href="/index.php">Strona główna</a></li>
-        <li class="nav_item"><a href="/pracownicy/orgPracownicy.php">Org i Prac</a></li>
-        <li class="nav_item"><a href="/pracownicy/agregat.php">F. agregujace</a></li>
-        <li class="nav_item"><a href="/pracownicy/pracownicy.php">Pracownicy</a></li>
-        <li class="nav_item"><a href="/dane-do-bazy/strona.php">Strona</a></li>
-        <li class="nav_item"><a href="/dane-do-bazy/formularz.html">Formularz</a></li>
-        <li class="nav_item"><a href="/dane-do-bazy/daneDoBazy.html">Insert</a></li>
-        
+       <?php include("../assets/menu.php"); ?>
+   
+</div>
 </div>
 <div class="item colorGreen"></div>
+
 
 </head>
 <body>

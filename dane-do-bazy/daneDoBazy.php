@@ -33,34 +33,19 @@
 
 <?php
 
+require_once("connect.php");
 
-require_once("../assets/connect.php");
-$sql = 'SELECT * FROM pracownicy, organizacja where dzial = id_org';
-$result = $conn->query($sql) or die($conn->error);
-echo("<table border=1>");
-echo("<th>id_pracownicy</th>");
-echo("<th>imie</th>");
-echo("<th>nazwa_dzial</th>");
-echo("<th>zarobki</th>");
-echo("<th>data_urodzenia</th>");
+$sql = ("SELECT id_pracownicy, imie, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organizacja where dzial=id_org");
+$result=$conn->query($sql);
+    echo("<table border=1>");
+    echo("<th>id_pracownicy</th>");
+    echo("<th>imie</th>");
+    echo("<th>zarobki</th>");
+    echo("<th>data_urodzenia</th>");
+    echo("<th>nazwa_dzial</th>");
+    echo("<th>usuwanie</th>");
 
-    while($wiersz=$result->fetch_assoc()){
-        echo("<tr>");
-          echo("<td>".$wiersz["id_pracownicy"]."</td><td>".$wiersz["imie"]."</td><td>".$wiersz["nazwa_dzial"]."</td><td>".$wiersz["zarobki"]."</td><td>".$wiersz["data_urodzenia"]."</td>
-		
-		<td>
-		
-		
-		<form action='delete.php' method='POST'>
-   			<input type='number' name='id' value='".$wiersz['id_pracownicy']."' hidden></br>
-   			<input type='submit' value='Usuń'>
-		</form>
-		
-		</td>
-		
-		");
-            echo("</tr>");
-        }
-echo("</table>");
 
-?>
+    while($row=$result->fetch_assoc()) {
+            echo("<tr>");
+                echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td><td>".$row["data_urodzenia"]."</td>

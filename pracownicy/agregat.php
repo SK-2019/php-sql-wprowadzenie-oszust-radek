@@ -6,18 +6,19 @@
     <link rel="stylesheet" href="/assets/style.css">
     <link rel="icon" href="https://www.favicon.cc/logo3d/308168.png">
     
-  <div class="container">
-    <div class="item colorRed">
-        <h1 class="title">Radek Oszust</h1>
-        <?php include("header.php"); ?>
+    
+        <div class="item colorBlue">
+<?php include("../assets/header.php"); ?>
 </div>
 <div class="item colorBlue">
     <div class="nav">
-         
-         <?php include("menu.php"); ?>
+        
+       <?php include("../assets/menu.php"); ?>
+   
+</div>
 </div>
 <div class="item colorGreen"></div>
-</div>
+
    
 </head>
 <body>
@@ -25,7 +26,7 @@
   <?php
     echo("<h1>agregat.php</h1>");
     echo("<h2>Suma zarobkow wszystkich pracownikow</h2>");
-    require_once("../connect.php");
+    require_once("connect.php");
  $sql = "SELECT sum(zarobki) as sum FROM pracownicy, organizacja WHERE (dzial = id_org)";
 echo("<h3>".$sql."</h3>");
 $conn = new mysqli("mysql-oszust-radek.alwaysdata.net","217211","Radek003003%","oszust-radek_db");
