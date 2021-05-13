@@ -26,7 +26,7 @@ h1 {
   
   .image:hover {
     transform: scale(0.98);
-    filter: saturate(2.2) brightness(1.4);
+    filter: saturate(2.2) brightness(0.8);
   }
   
   .foto01 {
@@ -44,6 +44,14 @@ h1 {
     background-image: url("https://3.bp.blogspot.com/-1Mly_ibZAaU/WuLVGLrbIdI/AAAAAAAAOI0/5klkr3bavPsXQPWv3xaCgqIreoIlNhLlQCLcBGAs/s1600/ba%25C5%2584ki%2Bchi%25C5%2584skie.jpg");
   }
   
+  .foto04 {
+    background-image: url("https://lh3.googleusercontent.com/proxy/K_9BG65QXJdM6t-gfDL9YU2OQ0T6wHpQyA-p7tCIl0m0fUHD2DzdGCg_fwJNk3-Q2MjK0wykWsF0BJMaBpXIUqkvwPhcvDJUD5l7Nw");
+  }
+
+  .foto05 {
+    background-image: url("https://yt3.ggpht.com/ytc/AAUvwnhA0H_ijvyT7wMNto2u7hsSlaqwQ2zQOcJ7z7wk=s900-c-k-c0x00ffffff-no-rj");
+  }
+
   .foto01_title {
     background-color: white;
     padding: 5px;
