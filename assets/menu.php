@@ -8,6 +8,7 @@
         <a class="nav_item" href="/dane-do-bazy/strona.php">Strona</a>
         <a class="nav_item" href="/dane-do-bazy/formularz.html">Formularz</a>
         <a class="nav_item" href="/dane-do-bazy/daneDoBazy.html">Insert</a>
+        <a class="nav_item" href="/galeria/galeria.html">Galeria</a>
         <h2>Relacje</h2>
         <a class="nav_item" href="/relacje/sklep.php">Sklep</a>
         <a class="nav_item" href="/relacje/przychodnia.php">Przychodnia</a>
